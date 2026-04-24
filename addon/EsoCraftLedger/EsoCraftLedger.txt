@@ -1,0 +1,8 @@
+## Title: EsoCraftLedger
+## Description: Exports crafting recipe data for use with ESO Craft Ledger
+## Author: ESO Craft Ledger
+## Version: 1.0.0
+## APIVersion: 101047
+## SavedVariables: EsoCraftLedgerData
+
+EsoCraftLedger.lua
