@@ -1,6 +1,12 @@
 # ESO Craft Ledger — Project Notes
 
 > Paste this file at the start of any new Claude session to restore full context.
+>
+> **GitHub repo:** https://github.com/jdvachal/eso-craft-ledger
+>
+> **Raw URLs for Claude:**
+> - https://raw.githubusercontent.com/jdvachal/eso-craft-ledger/main/NOTES.md
+> - https://raw.githubusercontent.com/jdvachal/eso-craft-ledger/main/CHANGELOG.md
 
 ---
 
