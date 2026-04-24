@@ -1,0 +1,93 @@
+.form { display: flex; flex-direction: column; gap: 14px; }
+
+.error {
+  background: var(--red-bg);
+  border: 1px solid var(--red);
+  color: var(--red);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  font-size: 13px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.field label {
+  font-size: 11px;
+  color: var(--text-dim);
+  font-family: var(--font-head);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.field input, .field select {
+  width: 100%;
+  font-size: 13px;
+  padding: 6px 9px;
+}
+
+.ingSection {
+  background: var(--bg4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ingTitle {
+  font-family: var(--font-head);
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.ingRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.matSelect {
+  flex: 1;
+  font-size: 13px;
+  padding: 5px 8px;
+}
+
+.qtyInput {
+  width: 70px;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px 6px;
+}
+
+.preview {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  padding: 10px 12px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  flex-wrap: wrap;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}

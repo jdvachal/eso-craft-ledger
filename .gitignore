@@ -1,0 +1,104 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+backend/venv/
+backend/env/
+backend/.env
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Database ──────────────────────────────────────────────────────────────────
+# Never commit the local database — it contains user data
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+*.sqlite
+*.sqlite3
+
+# ── Environment variables ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/.npm
+node_modules/
+
+# Build output
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# Cache
+frontend/.eslintcache
+frontend/tsconfig.tsbuildinfo
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+# Windows
+Thumbs.db
+Thumbs.db:encdata
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+# Zip files we generate for distribution
+*.zip
+
+# Python type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json

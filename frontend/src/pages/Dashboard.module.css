@@ -1,0 +1,63 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .charts { grid-template-columns: 1fr; }
+}
+
+.chartCard { min-height: 280px; }
+
+.noChart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-dim);
+  font-style: italic;
+  font-size: 13px;
+}
+
+.topTable { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.table th {
+  padding: 8px 12px;
+  background: var(--bg2);
+  color: var(--text-dim);
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.table tr:last-child td { border-bottom: none; }
+.table tbody tr:hover td { background: var(--bg4); }
+
+.rank { color: var(--gold-dim); font-family: var(--font-head); font-size: 12px; }
+.itemName { color: var(--text-hi); font-weight: 500; }

@@ -1,0 +1,121 @@
+.page { display: flex; flex-direction: column; gap: 16px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+.tableSection { min-width: 0; }
+.sidebar { display: flex; flex-direction: column; gap: 14px; }
+
+.controls { display: flex; gap: 8px; }
+
+.search {
+  width: 160px;
+  font-size: 13px;
+  padding: 5px 9px;
+}
+
+.filterSel {
+  font-size: 13px;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.tableWrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.table th {
+  padding: 8px 10px;
+  background: var(--bg2);
+  color: var(--text-dim);
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.table tr:last-child td { border-bottom: none; }
+.table tbody tr:hover td { background: var(--bg4); }
+
+.recipeName { color: var(--text-hi); font-weight: 500; white-space: nowrap; }
+
+.ingList { display: flex; flex-wrap: wrap; gap: 4px; max-width: 220px; }
+
+.ingTag {
+  background: var(--bg5);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 11px;
+  color: var(--teal);
+  white-space: nowrap;
+}
+
+.rowActions { display: flex; gap: 4px; }
+
+/* Quick calc */
+.calcRows { display: flex; flex-direction: column; gap: 8px; }
+.calcRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.calcRow label { font-size: 13px; color: var(--text-dim); }
+.calcInput { width: 110px; text-align: right; }
+
+.calcDivider { height: 1px; background: var(--border); margin: 10px 0; }
+
+.calcResults { display: flex; flex-direction: column; gap: 8px; }
+.calcResultMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calcBig { font-size: 20px; font-family: var(--font-head); font-weight: 600; }
+.calcResultSub {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* Summary */
+.sumRows { display: flex; flex-direction: column; gap: 10px; }
+.sumRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+}
+.bestName {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: right;
+  max-width: 140px;
+}

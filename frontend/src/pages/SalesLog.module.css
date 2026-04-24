@@ -1,0 +1,68 @@
+.page { display: flex; flex-direction: column; gap: 16px; }
+.pageHeader { display: flex; align-items: center; justify-content: space-between; }
+
+.summaryRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+.sumCard {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+}
+.sumLabel {
+  font-size: 10px;
+  font-family: var(--font-head);
+  letter-spacing: .07em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.sumVal {
+  font-size: 20px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+.search { width: 200px; }
+.sel { font-size: 13px; padding: 6px 9px; cursor: pointer; }
+
+.tableWrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.table th {
+  padding: 8px 12px;
+  background: var(--bg2);
+  color: var(--text-dim);
+  font-family: var(--font-head);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.table td { padding: 8px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tbody tr:hover td { background: var(--bg4); }
+.itemName { color: var(--text-hi); font-weight: 500; }
+.traitBadge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 3px;
+  font-size: 11px;
+  background: var(--bg5);
+  border: 1px solid var(--border-hi);
+  color: var(--teal);
+}
+
+.form { display: flex; flex-direction: column; gap: 12px; }
+.error { background: var(--red-bg); border: 1px solid var(--red); color: var(--red); padding: 8px 12px; border-radius: var(--radius); font-size: 13px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label { font-size: 11px; color: var(--text-dim); font-family: var(--font-head); letter-spacing: .04em; text-transform: uppercase; }
+.field input, .field select { width: 100%; font-size: 13px; }
+.preview { display: flex; gap: 20px; font-size: 13px; padding: 10px 12px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); flex-wrap: wrap; }
+.formActions { display: flex; gap: 8px; justify-content: flex-end; }
